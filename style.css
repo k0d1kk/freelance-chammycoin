@@ -1,0 +1,490 @@
+@font-face {
+  font-family: "Luck";
+  src: url("fonts/LuckiestGuy-Regular.woff") format("woff");
+}
+
+:root {
+  --main: black;
+  --white: #fff;
+  --primary: #ffdf78;
+  --blue: #7883ff;
+}
+
+html,
+body,
+a,
+li,
+ul,
+h1,
+h2,
+h3,
+p,
+sub,
+sup,
+button,
+span,
+form,
+div,
+section,
+textarea,
+input {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--primary);
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo > img {
+  width: 69px;
+  height: 69px;
+}
+
+.header__soc {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.header__soc > div > img {
+  background: transparent;
+}
+
+.one__page {
+  margin-top: 20px;
+}
+
+.one__page__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.one__page__wrapper > h1 {
+  font-size: 120px;
+  font-family: "Luck", sans-serif;
+  text-align: center;
+}
+
+.title {
+  -webkit-animation: 0.6s linear 0s normal none infinite running title;
+  animation: 0.6s linear 0s normal none infinite running title;
+}
+
+@keyframes title {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  40% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  75% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  80% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  85% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes title {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  40% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  75% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+  80% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+  85% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.one__page__wrapper > p {
+  font-size: 24px;
+  font-family: "Luck", sans-serif;
+  text-align: center;
+}
+
+.button {
+  background: white;
+  padding: 15px 60px;
+  border-radius: 10px;
+  color: black;
+  font-family: "Luck", sans-serif;
+  font-size: 20px;
+}
+
+.ca {
+  border: 5px solid white;
+  padding: 5px 40px;
+  color: black;
+  font-family: "Luck", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.one__page__soc {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.one__page__soc > a > div {
+  background: black;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Luck", sans-serif;
+  font-size: 20px;
+}
+
+.one__page__soc > div {
+  background: black;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Luck", sans-serif;
+  font-size: 20px;
+}
+
+.decor__mobile {
+  display: none;
+}
+.decor__1 {
+  position: absolute;
+  top: 330px;
+  left: 0;
+}
+
+.decor__1 > img {
+  width: 200px;
+  height: 250px;
+}
+
+.decor__2 {
+  top: 220px;
+  position: absolute;
+  right: 0;
+}
+
+.decor__2 > img {
+  width: 200px;
+  height: 250px;
+}
+
+.one__sliders {
+  background-color: white;
+  margin-top: 60px;
+  gap: 40px;
+  background-color: var(--primary);
+}
+
+.scroller {
+  width: 100%;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 40s;
+}
+
+.scroller[data-speed="slowed"] {
+  --_animation-duration: 50s;
+}
+
+@-webkit-keyframes scroll {
+  to {
+    -webkit-transform: translate(calc(-50% - 0.5rem));
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@keyframes scroll {
+  to {
+    -webkit-transform: translate(calc(-50% - 0.5rem));
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.def-slide-img {
+  width: 150px;
+  height: 150px;
+}
+
+.three__page {
+  margin-top: 30px;
+  background: var(--blue);
+  padding-bottom: 60px;
+  margin-bottom: 500px;
+}
+
+.three__page__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.three__page__left {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.three__page__left > h2 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Luck", sans-serif;
+  font-size: 64px;
+}
+
+.three__page__left > p {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Luck", sans-serif;
+  font-size: 28px;
+}
+
+.three__page__right {
+  display: flex;
+  margin-top: 280px;
+  flex-direction: column;
+}
+
+.cloud {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.cloud > img:nth-child(2) {
+  margin-top: -280px;
+  margin-right: -50px;
+}
+
+.three__page__right__img {
+  display: flex;
+  justify-content: center;
+}
+
+.three__page__right__img > img {
+  width: 200px;
+  height: 250px;
+}
+
+@media screen and (max-width: 1068px) {
+  .decor__1 > img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .decor__2 > img {
+    width: 150px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .decor__2 {
+    display: none;
+  }
+  .one__page__wrapper > h1 {
+    font-size: 80px;
+    margin-top: 60px;
+  }
+  .decor__1 {
+    display: none;
+  }
+  .decor__mobile {
+    display: flex;
+    margin-top: 30px;
+  }
+  .decor__mobile > img {
+    width: 200px;
+    height: 250px;
+  }
+  .one__sliders {
+    margin-top: -20px;
+  }
+  .one__page__soc {
+    flex-direction: column;
+  }
+  .three__page__wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .three__page__left {
+    align-items: center;
+    justify-content: center;
+  }
+  .three__page__left > h2 {
+    font-size: 54px;
+  }
+
+  .three__page__left > p {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Luck", sans-serif;
+    font-size: 24px;
+  }
+  .three__page__left > img {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .one__page__wrapper > h1 {
+    font-size: 70px;
+  }
+}
